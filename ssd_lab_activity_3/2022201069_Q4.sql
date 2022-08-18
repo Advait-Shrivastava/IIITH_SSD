@@ -1,0 +1,1 @@
+select DEPARTMENT.Dnumber,DEPARTMENT.Dname,count(*) from DEPARTMENT NATURAL JOIN DEPT_LOCATIONS where DEPARTMENT.Mgr_ssn in (select Mgr_ssn from DEPARTMENT,DEPENDENT where DEPARTMENT.Mgr_ssn = DEPENDENT.Essn && DEPENDENT.Sex='F'group by Mgr_ssn having count(*)>1) group by DEPARTMENT.Dnumber,DEPARTMENT.Dname;
