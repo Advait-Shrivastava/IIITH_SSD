@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Question 1b</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<script>
+    function add_to_table()
+    {
+        var table_name = document.getElementById("tables");
+        var row_count = document.getElementById("tables").rows.length;
+        var row = table_name.insertRow(row_count);
+        var roll = document.getElementById("rollnumber").value;
+        var name = document.getElementById("name").value;
+        var col1 = row.insertCell(0);
+        var col2 = row.insertCell(1);
+        col1.innerHTML = roll;
+        col2.innerHTML = name;
+        document.getElementById("rollnumber").value="";
+        document.getElementById("name").value="";
+    }
+
+    function delete_from_table()
+    {
+        var row_count = document.getElementById("tables").rows.length;
+        if(row_count>1)
+        {
+            document.getElementById("tables").deleteRow(row_count-1);
+        } 
+    }
+</script>
+
+<body>
+
+    
+    <h1 style="text-align:center;">Student Records</h1>
+
+    <div class = "record">
+    <label for="rollnumber"></label>
+    <input type="text" id="rollnumber" name="rollnumber " placeholder="Rollnumber">
+    &nbsp;
+    &nbsp;
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Name">
+    &nbsp;
+    &nbsp;
+    <input type="submit" value="Add New" id="add" onclick="add_to_table()">
+    &nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Delete Entry" id="delete" onclick="delete_from_table()">
+    
+    <br>
+    <br>
+
+    <table id="tables">
+        <tr>
+            <th>Rollnumber</th>
+            <th>Name</th>
+        </tr>
+
+    </table>
+
+    </div>
+</body>

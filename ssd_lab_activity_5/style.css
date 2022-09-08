@@ -1,0 +1,142 @@
+body{
+    background-image:linear-gradient(to right,grey,white);
+    font-family: Arial;
+}
+
+.mid
+{
+    background-color:lightblue;
+    border-radius: 20px;
+    box-shadow: 5px 6px #888888;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    left: 40%;
+    top:25%;
+    position: absolute;
+    font-weight: bold;
+    
+}
+
+#button
+{
+
+    background-color: blue;
+    border: none;
+    color: black;
+    padding: 7px 6px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+#username
+{
+    border-style: groove;
+}
+
+#username:hover
+{
+    border-style: groove;
+    border-color: red;
+    border-width: medium;
+}
+
+#password
+{
+    border-style: groove;
+}
+
+#password:hover
+{
+    border-style: groove;
+    border-color: red;
+    border-width: medium;
+}
+
+
+#button:hover {
+    background-color: green;
+  }
+
+
+.record
+{
+      text-align: center;
+      left: 30%;
+      top:25%;
+      position: absolute;
+      font-weight: bold;
+      
+}
+
+
+table, td, th {
+    border: 1px solid;
+    border-color: blue;
+    background-color:lightblue;
+    Color:black;
+    text-align: center;
+  }
+
+th {
+    background-color:lightgreen;
+    Color:black;
+    text-align: center;
+
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+  }
+
+
+#add
+{
+
+    background-color: green;
+    border: none;
+    color: black;
+    padding: 7px 6px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#delete
+{
+
+    background-color: red;
+    border: none;
+    color: black;
+    padding: 7px 6px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#rollnumber
+{
+    padding: 4px 5px;
+    border-color: blueviolet;
+    border-width: medium;
+}
+
+#name  
+{
+    padding: 4px 5px;
+    border-color: blueviolet;
+    border-width: medium;
+}
