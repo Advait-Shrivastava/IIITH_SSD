@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Question 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <script src="valid.js"></script>
+
+    <h1>Team Form</h1>
+    <form name="form1">
+        <label for="name">Manager Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Group Email:</label>
+        <input type="email" id="email" value="" name="email"><br><br>
+        <label for="server">Server User:</label>
+        <input type="test" id="server" name="server" onkeyup="ValidateServer(this.value);" required>
+        <label id="mess1"></label><br><br>
+        <label for="password">Server Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="cpassword">Confirm Password:</label>
+        <input type="password" id="cpassword" name="cpassword" onkeyup="confirm_pass(document.form1.password.value);"required>
+        <label id="mess2"></label><br><br>
+
+            <label> Team Lead </label>  
+            <select>  
+            <option value = "Rachle"> Rachle 
+            </option>  
+            <option value = "Chandler"> Chandler   
+            </option>  
+            <option value = "Joey"> Joey 
+            </option>  
+            <option value = "Monika"> Monika
+            </option>
+            <option value = "Ross"> Ross
+            </option>   
+            </select>
+
+                <br>
+                <br>
+            <input type="submit" value="Submit" id="submit" onclick="ValidateEmail(document.form1.email)" onclick="check_all(document.form1.server.value,document.form1.password.value)">
+            
+      </form>
+
+
+
+</body>
